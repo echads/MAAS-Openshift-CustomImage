@@ -10,7 +10,7 @@ wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/
 echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
 ```
 ```bash
-sudo apt update && sudo apt install -y packer qemu-utils qemu-system ovmf cloud-image-utils
+sudo apt update && sudo apt install -y packer qemu-utils
 ```
 
 ```bash
